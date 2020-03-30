@@ -7,7 +7,7 @@ module.exports = {
 
         const incidents = await connection('incidents')
             .where('ong_id', ong_id)
-            .select(*)
+            .select('*')
 
         return response.json(incidents);
     },
